@@ -1,7 +1,7 @@
 {
-  "name": "react-componenet-poc-demo",
+  "name": "react-componenet-poc",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -21,7 +21,6 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
     "postbuild": "npm run copy-files",
     "prebuild": "npm run clean && npm run compile-icons",
     "prepublish": "npm run build"
@@ -81,5 +80,18 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.2.3",
     "web-vitals": "^1.1.1"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gautam-zemoso/react-componenet-poc-demo.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "gautam",
+  "bugs": {
+    "url": "https://github.com/gautam-zemoso/react-componenet-poc-demo/issues"
+  },
+  "homepage": "https://github.com/gautam-zemoso/react-componenet-poc-demo#readme"
 }
