@@ -9,36 +9,41 @@ Making a React Component Library with Storybook and NPM.
 
 In the project directory, you can run:
 
+#Installation
+
+Create new React App project
+### `npx create-react-app my-app --template typescript`
+or
+### `npx create-react-app my-app`
+
+Create storybook component
+### `npx sb init`
+
+Add components for the library that need to be utilized in other projects.
+
+check components by
 ### `npm run storybook`
-Create storybook component 
 
-### `npm run build`
-
-Builds the app for production to the `lib` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-# Usage
+# instructions on how deploy the library
 1. Change the project name in package.json
-2. Create an account in NPM and login from cli by running npm login
-3. Run npm publish
 
-### `npm run eject`
+   ````
+   Add following code in package.json  
+      "license": "MIT",
+       "main": "lib/index.js",
+       "directories": {
+       "lib": "lib"
+       },
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Create an account in NPM and login from cli by running
+   ### `npm login`
+3. For Publishing lib Run:
+   ### `npm publish`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
